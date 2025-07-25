@@ -168,3 +168,76 @@
   font-weight: bold;
 }
 
+/* ------------------- RESPONSIVE ------------------- */
+@media screen and (max-width: 1024px) {
+  .productos-container {
+    padding: 1.5rem;
+  }
+
+  .tarjetas-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .productos-container h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productos-container {
+    padding: 1rem;
+  }
+
+  .filtros input,
+  .filtros select,
+  .filtros button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .productos-tabla th,
+  .productos-tabla td {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .tarjetas-grid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+
+  .tarjeta-producto h4 {
+    font-size: 1rem;
+  }
+
+  .paginacion {
+    gap: 1rem;
+  }
+
+  .paginacion button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filtros {
+    flex-direction: column;
+  }
+
+  .productos-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .tarjetas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta-producto img {
+    height: 140px;
+  }
+
+  .paginacion {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
