@@ -7,7 +7,6 @@ const Factura = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Recibe datos pasados desde /carrito
   const {
     productos = [],
     fecha = new Date().toLocaleString(),
@@ -26,7 +25,6 @@ const Factura = () => {
     }).save();
   };
 
-  // Redirige si se accede directamente sin datos
   useEffect(() => {
     if (!productos.length) {
       navigate('/');

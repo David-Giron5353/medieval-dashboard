@@ -22,7 +22,7 @@ const ModalFinalizarCompra = ({ visible, onClose, productos, vaciar, navigate })
     localStorage.setItem('historialCompras', JSON.stringify(historial));
 
     vaciar();
-    onClose(); // cierra el modal
+    onClose();
     navigate('/factura', { state: { productos, fecha, total, nombre, email } });
   };
 

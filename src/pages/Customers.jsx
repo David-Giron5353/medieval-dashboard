@@ -11,7 +11,7 @@ const Customers = () => {
   const [filtroFecha, setFiltroFecha] = useState('');
   const [ordenValor, setOrdenValor] = useState('');
   const [ordenFecha, setOrdenFecha] = useState('');
-  const [ordenNombre, setOrdenNombre] = useState('asc'); // por defecto A-Z
+  const [ordenNombre, setOrdenNombre] = useState('asc');
   const [mostrarHistorial, setMostrarHistorial] = useState(null);
   const [paginaClientes, setPaginaClientes] = useState(1);
   const [paginaHistorial, setPaginaHistorial] = useState(1);
