@@ -72,7 +72,7 @@ El proyecto incluye funcionalidades como visualización de productos, gestión d
 ## Instalación
 
 ```bash
-git clone [ttps://github.com/David-Giron5353/medieval-dashboard.git]
+git clone [https://github.com/David-Giron5353/medieval-dashboard.git]
 cd medieval-dashboard
 npm install
 npm run dev
