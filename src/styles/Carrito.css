@@ -1,0 +1,144 @@
+.nota-carrito {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: #1f1f1f;
+  color: #f0e68c;
+  font-family: 'Georgia', serif;
+  border: 1px solid #d2b48c;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  animation: slideUp 0.3s ease-out;
+  z-index: 999;
+}
+
+.nota-carrito h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.nota-carrito ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nota-carrito li {
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nota-carrito li button {
+  background: none;
+  color: red;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.nota-carrito li button:hover {
+  text-decoration: none;
+  background-color: inherit;
+  font-size: larger;
+}
+
+.boton-carrito-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.carrito-btn  {
+  position: relative;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carrito-btn:hover {
+  font-size: 1.6rem;
+  background-color: #666;
+}
+
+
+.carrito-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.carrito-total {
+  margin-top: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff7b2;
+  border-top: 1px dashed #d2b48c;
+  padding-top: 0.5rem;
+}
+
+.btn-finalizar button{
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #d2b48c;
+  color: #1f1f1f;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-finalizar:hover button {
+  background-color: #be6600;
+}
+
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #d2b48c transparent;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #d2b48c;
+  border-radius: 4px;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

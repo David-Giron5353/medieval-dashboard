@@ -1,0 +1,56 @@
+.modal-compra-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-compra {
+  background: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.modal-compra h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.modal-compra input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.modal-buttonsF button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #8e24aa;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-buttonsF button:hover {
+  background: #6a1b9a;
+}

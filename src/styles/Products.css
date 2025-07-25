@@ -1,0 +1,170 @@
+.productos-container {
+  padding: 2rem;
+  background-color: #fffaf2;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2e1a10;
+}
+
+.productos-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #8a5a2e;
+  padding-left: 1rem;
+  color: #5e2b1c;
+}
+
+.filtros {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.filtros input,
+.filtros select,
+.filtros button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #a97442;
+  background-color: #f6e9d5;
+  color: #3a1f0f;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filtros button:hover {
+  background-color: #e0c8a5;
+}
+
+.productos-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fffefb;
+  border: 2px solid #c4a67a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productos-tabla th,
+.productos-tabla td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e0c6a6;
+  vertical-align: middle;
+}
+
+.productos-tabla th {
+  background-color: #8a5a2e;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.productos-tabla td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #d1b893;
+}
+
+.productos-tabla button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.productos-tabla button:hover {
+  transform: scale(1.2);
+}
+
+.tarjetas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta-producto {
+  background-color: #fff7ec;
+  border: 2px solid #d6ae7b;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.tarjeta-producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  border: 1px solid #d1b893;
+}
+
+.tarjeta-producto h4 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.tarjeta-producto button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-producto button:hover {
+  transform: scale(1.2);
+}
+
+.paginacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.paginacion button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: #8a5a2e;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  line-height: 1.2;
+}
+
+.paginacion button svg {
+  font-size: 1.1rem;
+  vertical-align: middle;
+  position: relative;
+  top: 1px;
+}
+
+.paginacion button:disabled {
+  background-color: #c8b6a0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.paginacion span {
+  font-weight: bold;
+}
+

@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+# Medieval Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción del Proyecto
 
-## Available Scripts
+Medieval Dashboard es un sistema de gestión visual enfocado en la administración de productos, clientes y ventas. Está diseñado con una estética temática medieval moderna, adaptable a modo claro y modo oscuro. No requiere backend: toda la persistencia de datos se maneja en el navegador mediante `localStorage`.
 
-In the project directory, you can run:
+El proyecto incluye funcionalidades como visualización de productos, gestión de favoritos, carrito de compras, historial de clientes, gráficos de ventas, exportaciones en PDF/CSV y generación de facturas.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologías Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [React.js](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Recharts](https://recharts.org/en-US/)
+- [html2pdf.js](https://github.com/eKoopmans/html2pdf)
+- [file-saver](https://github.com/eligrey/FileSaver.js)
+- CSS personalizado (modo claro / oscuro)
+- `localStorage` (persistencia de datos local)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estructura del Proyecto
 
-### `npm run build`
+📦 src/
+├── 📁 Public/
+│   └── img/
+│ 
+├── 📁 components/
+│   ├── ModalProducto.jsx
+│   ├── ModalFinalizarCompra.jsx
+│   ├── DarkModeToggle.jsx
+│   ├── Carrito.jsx
+│   └── Sidebar.jsx
+│ 
+├── 📁 context/
+│   └── ThemeContext.js
+│ 
+├── 📁 data/
+│   ├── noticiasData.js
+│   └── productosLicor.js
+│ 
+├── 📁 hooks/
+│   ├── useCarrito.js
+│   └── useFavoritos.js
+│ 
+├── 📁 pages/
+│   ├── Dashboard.jsx
+│   ├── Products.jsx
+│   ├── Customers.jsx
+│   ├── Ventas.jsx
+│   └── Factura.jsx
+│ 
+├── 📁 routes/
+│   └── AppRoutes.jsx
+│ 
+├── 📁 styles/
+│   ├── ModalProducto.css
+│   ├── ModalFinalizarCompra.css
+│   ├── DarkModeToggle.css
+│   ├── Carrito.css
+│   ├── Sidebar.css
+│   ├── Dashboard.css
+│   ├── Products.css
+│   ├── Customers.css
+│   ├── Ventas.css
+│   ├── Factura.css
+│   └── global.css
+│
+├── App.jsx
+└── index.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalación
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/usuario/medieval-dashboard.git
+cd medieval-dashboard
+npm install
+npm run dev
+```
 
-### `npm run eject`
+> El servidor se iniciará en `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Funcionalidades
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Productos
+- Vista en tabla o tarjetas
+- Filtros por nombre, categoría y precio
+- Paginación
+- Botones con íconos: ver detalles, añadir al carrito, marcar favorito
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Carrito
+- Visualiza productos seleccionados
+- Cálculo total en tiempo real
+- Eliminar productos
+- Generación de factura en PDF
 
-## Learn More
+### Clientes
+- Visualización por usuario
+- Filtros por nombre, correo, fecha
+- Orden por total gastado, fecha, nombre
+- Exportar PDF y CSV
+- Historial detallado con paginación
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Ventas
+- Gráficos de ventas por producto
+- Filtros por fecha
+- Exportación a PDF
+- Limpieza de historial
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Factura
+- Resumen detallado de compra
+- Vista previa de factura tipo recibo
+- Exportación a PDF
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Modo Oscuro
 
-### Analyzing the Bundle Size
+- Activable/desactivable con botón flotante
+- Adaptado a todos los módulos
+- Colores personalizados para mejor experiencia nocturna
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Dependencias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install react react-dom
+npm install html2pdf.js
+npm install file-saver
+npm install recharts
+```
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Requisitos
 
-### Deployment
+- Node.js 16+
+- Navegador moderno
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

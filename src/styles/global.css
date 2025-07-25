@@ -1,0 +1,26 @@
+
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background-color: #f8f4e3;
+  color: #2f1b0c;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+a {
+  color: #5e2b1c;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  background: #e7dcc8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b2926b;
+  border-radius: 5px;
+}

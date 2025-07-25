@@ -1,0 +1,461 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode ::-webkit-scrollbar {
+  width: 8px;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}
+
+/* Botón para activar modo oscuro */
+.boton-dark-mode button {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.boton-dark-mode button:hover {
+  font-size: 1.6rem;
+}
+
+/* ================= DASHBOARD ================= */
+body.dark-mode .dashboard-container {
+  background-color: #1c140f;
+  color: #f5e8d0;
+}
+
+/* Noticias */
+body.dark-mode .noticia-banner {
+  border-bottom: 4px solid #d4a64a;
+}
+body.dark-mode .noticia-imagen {
+  filter: brightness(0.9);
+}
+body.dark-mode .noticia-titulo {
+  background: rgba(20, 10, 5, 0.85);
+  color: #fff4cc;
+}
+
+/* Acerca del negocio */
+body.dark-mode .seccion-negocio {
+  background-color: #2e2218;
+  border-left: 8px solid #d4a64a;
+}
+body.dark-mode .negocio-imagen {
+  border: 4px solid #d4a64a;
+}
+
+/* Favoritos */
+body.dark-mode .favorito-card {
+  background-color: #3b2b1f;
+  border: 2px solid #d4a64a;
+  color: #fff1dc;
+}
+body.dark-mode .favorito-img {
+  border: 1px solid #d4a64a;
+}
+
+/* Modales */
+body.dark-mode .modal-overlayN {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+body.dark-mode .modal-contentN {
+  background-color: #2e1d13;
+  color: #fff1dc;
+  border: 4px double #d4a64a;
+}
+body.dark-mode .modal-img {
+  border: 1px solid #d4a64a;
+}
+body.dark-mode .btn-cerrar {
+  color: #ffbbbb;
+}
+body.dark-mode .btn-cerrar:hover {
+  color: #ff6666;
+}
+
+/* Resumen */
+body.dark-mode .seccion-resumen {
+  background-color: #281d12;
+}
+body.dark-mode .card-resumen {
+  background-color: #3b2b1f;
+  border: 2px solid #d4a64a;
+  color: #fce9c3;
+}
+
+/* ================= PRODUCTS ================= */
+body.dark-mode .productos-container {
+  background-color: #1c1a16;
+  color: #f0e6d6;
+}
+
+body.dark-mode .productos-container h1 {
+  color: #e1cbb3;
+  border-left-color: #b88654;
+}
+
+body.dark-mode .filtros input,
+body.dark-mode .filtros select {
+  background-color: #2b261f;
+  color: #f0e6d6;
+  border: 2px solid #a97442;
+}
+
+body.dark-mode .filtros button {
+  background-color: #5c3c23;
+  color: #fff7e6;
+}
+
+body.dark-mode .filtros button:hover {
+  background-color: #8a5a2e;
+}
+
+/* Tabla */
+body.dark-mode .productos-tabla {
+  background-color: #2a241c;
+  border-color: #8b6f45;
+}
+
+body.dark-mode .productos-tabla th {
+  background-color: #5c3c23;
+  color: #fff7e6;
+}
+
+body.dark-mode .productos-tabla td {
+  color: #f3e6ce;
+  border-bottom: 1px solid #3a2f24;
+}
+
+body.dark-mode .productos-tabla td img {
+  border: 1px solid #8b6f45;
+}
+
+body.dark-mode .productos-tabla button {
+  color: #f4ddb3;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+body.dark-mode .productos-tabla button:hover {
+  transform: scale(1.3);
+  color: #f6c87d;
+}
+
+/* Tarjetas */
+body.dark-mode .tarjeta-producto {
+  background-color: #3b2b1f;
+  border: 2px solid #d4a64a;
+  color: #fff1dc;
+}
+
+body.dark-mode .tarjeta-producto img {
+  border: 1px solid #d4a64a;
+}
+
+/* Paginación */
+body.dark-mode .paginacion button {
+  background-color: #5c3c23;
+  color: #fff;
+}
+
+body.dark-mode .paginacion button:disabled {
+  background-color: #4a3c2b;
+  opacity: 0.6;
+}
+
+body.dark-mode .paginacion span {
+  color: #f0e6d6;
+}
+
+/* ================= VENTAS ================= */
+body.dark-mode .ventas-container {
+  background-color: #1c1a16;
+  color: #f0e6d6;
+}
+
+body.dark-mode .ventas-container h1 {
+  color: #e1cbb3;
+  border-left-color: #b88654;
+}
+
+body.dark-mode .filtros-ventas input,
+body.dark-mode .filtros-ventas select {
+  background-color: #2b261f;
+  color: #f0e6d6;
+  border: 2px solid #a97442;
+}
+
+body.dark-mode .filtros-ventas button {
+  color: #fff7e6;
+}
+
+body.dark-mode .filtros-ventas button:hover {
+  background-color: transparent;
+}
+
+/* Gráfico */
+body.dark-mode #grafico-contenido {
+  background-color: #2a241c;
+  border: 2px solid #8b6f45;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.04);
+}
+body.dark-mode #grafico-contenido .recharts-tooltip-wrapper,
+body.dark-mode #grafico-contenido .recharts-tooltip-item,
+body.dark-mode #grafico-contenido .recharts-default-tooltip {
+  background-color: #2e2e2e !important;
+  color: #dd8b11 !important;
+  border-radius: 8px;
+  font-family: 'Georgia', serif;
+  font-size: 0.95rem;
+}
+
+/* Icon buttons */
+body.dark-mode .icon-btn {
+  background: none;
+  border: none;
+  color: #f4ddb3;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+body.dark-mode .icon-btn:hover {
+  color: #f6c87d;
+  transform: scale(1.3);
+}
+
+body.dark-mode .icon-btn.borrar {
+  color: #ff6b6b;
+}
+
+body.dark-mode .icon-btn.borrar:hover {
+  color: #ff3b3b;
+}
+
+/* ================= CUSTOMERS ================= */
+body.dark-mode .clientes-container {
+  background-color: #1c1a16;
+  color: #f0e6d6;
+}
+
+body.dark-mode .clientes-container h1 {
+  color: #e1cbb3;
+  border-left-color: #b88654;
+}
+
+body.dark-mode .filtros-clientes input,
+body.dark-mode .filtros-clientes select {
+  background-color: #2b261f;
+  color: #f0e6d6;
+  border: 2px solid #a97442;
+}
+
+body.dark-mode .filtros-clientes button {
+  color: #fff7e6;
+}
+
+body.dark-mode .filtros-clientes button:hover {
+  background-color: transparent;
+}
+
+/* Tabla */
+body.dark-mode .tabla-clientes {
+  background-color: #2a241c;
+  border-color: #8b6f45;
+}
+
+body.dark-mode .tabla-clientes th {
+  background-color: #5c3c23;
+  color: #fff7e6;
+}
+
+body.dark-mode .tabla-clientes td {
+  color: #f3e6ce;
+  border-bottom: 1px solid #3a2f24;
+}
+
+body.dark-mode .tabla-clientes td button {
+  color: #f4ddb3;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+body.dark-mode .tabla-clientes td button:hover {
+  transform: scale(1.2);
+  color: #f6c87d;
+}
+
+/* Paginación */
+body.dark-mode .paginacion-clientes button {
+  color: #fff;
+}
+
+body.dark-mode .paginacion-clientes button:disabled {
+  background-color: #4a3c2b;
+}
+
+body.dark-mode .paginacion-clientes span {
+  color: #f0e6d6;
+}
+
+/* Modal */
+body.dark-mode .modal {
+  background: rgba(15, 10, 5, 0.8);
+}
+
+body.dark-mode .modal-content {
+  background-color: #2c2620;
+  color: #f0e6d6;
+  border: 2px solid #8b6f45;
+}
+
+body.dark-mode .modal-content h3 {
+  color: #e1cbb3;
+}
+
+body.dark-mode .modal-content li {
+  color: #f0e6d6;
+}
+
+body.dark-mode .paginacion-modal button {
+  background-color: #5c3c23;
+  color: #fff;
+}
+
+body.dark-mode .paginacion-modal button:disabled {
+  background-color: #4a3c2b;
+}
+
+body.dark-mode .modal-content > div button {
+  color: #f4ddb3;
+}
+
+body.dark-mode .modal-content > div button:hover {
+  color: #f6c87d;
+}
+
+body.dark-mode .factura-container {
+  background-color: #121212;
+  color: #f0e6d6;
+}
+
+body.dark-mode .factura-box {
+  background-color: #1e1a16;
+  border: 1px solid #a97442;
+  color: #f3e6ce;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .factura-box h1 {
+  color: #f1c5ff;
+  border-bottom: 1px solid #f1c5ff;
+}
+
+body.dark-mode .factura-box li {
+  border-bottom: 1px dotted #a97442;
+}
+
+body.dark-mode .factura-total {
+  border-top: 2px solid #a97442;
+  color: #fff1dc;
+}
+
+body.dark-mode .factura-acciones button {
+  background-color: #d37408;
+  color: #fff8f0;
+}
+
+body.dark-mode .factura-acciones button:hover {
+  background-color: #f18407;
+}
+
+body.dark-mode .factura-logo {
+  filter: brightness(0.9);
+}
+/* MODAL COMPRA */
+body.dark-mode .modal-compra-overlay {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+body.dark-mode .modal-compra {
+  background: #1f1a17;
+  color: #f0e6d6;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+  border: 1px solid #8b6f45;
+}
+
+body.dark-mode .modal-compra h2 {
+  color: #e1cbb3;
+}
+
+body.dark-mode .modal-compra input {
+  background-color: #2b261f;
+  color: #f0e6d6;
+  border: 1px solid #a97442;
+  padding: 0.6rem;
+  border-radius: 5px;
+}
+
+body.dark-mode .modal-buttonsF button {
+  background: #d37408;
+  color: #fff8f0;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode .modal-buttonsF button:hover {
+  background: #f18407;
+}
+
+/* ===== MODAL PRODUCTO ===== */
+body.dark-mode .modal-backdrop {
+  background-color: rgba(10, 10, 10, 0.85);
+}
+
+body.dark-mode .modal-contenido {
+  background: #2c2620;
+  color: #f5e9d7;
+  border: 2px solid #8b6f45;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .modal-contenido img {
+  border: 1px solid #a97442;
+  border-radius: 8px;
+}
+
+body.dark-mode .cerrar-modal {
+  background: #444;
+  color: #fff;
+  border: 1px solid #777;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .cerrar-modal:hover {
+  background: #a94c4c;
+  color: #fff;
+}
