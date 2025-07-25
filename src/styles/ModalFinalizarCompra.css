@@ -45,12 +45,12 @@
 .modal-buttonsF button {
   padding: 0.5rem 1rem;
   border: none;
-  background: #8e24aa;
+  background: #d2b48c;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .modal-buttonsF button:hover {
-  background: #6a1b9a;
+  background: #be6600;
 }
