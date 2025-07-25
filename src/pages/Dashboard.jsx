@@ -33,7 +33,6 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard-container">
-      {/* 📰 Noticias */}
       <section>
         <div
           className="noticia-banner"
@@ -50,7 +49,6 @@ export default function Dashboard() {
         </div>
       </section>
 
-      {/* Modal de noticia */}
       {modalNoticia && (
         <div className="modal-overlayN">
           <div className="modal-contentN">
@@ -62,7 +60,6 @@ export default function Dashboard() {
         </div>
       )}
 
-      {/* 📝 Acerca del negocio */}
       <section className="seccion-negocio">
         <div className="negocio-texto">
           <h2>Acerca del negocio</h2>
@@ -80,7 +77,6 @@ export default function Dashboard() {
         />
       </section>
 
-      {/* ⭐ Favoritos */}
       <section className="seccion-favoritos">
         <h2>⭐ Productos favoritos</h2>
         {favoritos.length === 0 ? (
@@ -106,7 +102,6 @@ export default function Dashboard() {
         )}
       </section>
 
-      {/* Modal producto favorito */}
       {modalProducto && (
         <div className="modal-overlayN">
           <div className="modal-contentN">
@@ -124,7 +119,6 @@ export default function Dashboard() {
         </div>
       )}
 
-      {/* 📈 Resumen */}
       <section className="seccion-resumen">
         <div className="card-resumen">💰 Ventas totales: <strong>${resumen.totalVentas.toLocaleString()}</strong></div>
         <div className="card-resumen">👥 Clientes únicos: <strong>{resumen.clientes}</strong></div>

@@ -94,7 +94,6 @@ const Ventas = () => {
     <div className="ventas-container" style={{padding: '1rem'}} >
       <h1>Ventas</h1>
 
-      {/* 🎛️ Filtros */}
       <div className="filtros-ventas">
         <label>Desde:
           <input type="date" value={fechaInicio} onChange={e => setFechaInicio(e.target.value)} />
@@ -121,7 +120,6 @@ const Ventas = () => {
       <button onClick={borrarHistorial} className="icon-btn borrar" title="Borrar historial">🗑️</button>
       </div>
 
-      {/* 📊 Gráfico */}
       <div id="grafico-contenido">
         {tipoGrafico === 'pastel' && (
           <ResponsiveContainer width="100%" height={400}>
