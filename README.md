@@ -24,35 +24,35 @@ El proyecto incluye funcionalidades como visualización de productos, gestión d
 ├── 📁 Public/
 │   └── img/
 │ 
-├── 📁 components/
+├── 📁 components/ -- maneja componentes reutilizables --
 │   ├── ModalProducto.jsx
 │   ├── ModalFinalizarCompra.jsx
 │   ├── DarkModeToggle.jsx
 │   ├── Carrito.jsx
 │   └── Sidebar.jsx
 │ 
-├── 📁 context/
+├── 📁 context/ -- archivos relacionados con el manejo del estado global de la aplicación --
 │   └── ThemeContext.js
 │ 
-├── 📁 data/
+├── 📁 data/ --  archivos que contienen datos estáticos o simulados --
 │   ├── noticiasData.js
 │   └── productosLicor.js
 │ 
-├── 📁 hooks/
+├── 📁 hooks/ --  funciones especiales de React que ayudan a organizar mejor el código y reutilizar lógica en la aplicacion --
 │   ├── useCarrito.js
 │   └── useFavoritos.js
 │ 
-├── 📁 pages/
+├── 📁 pages/ -- maneja las paginas principales --
 │   ├── Dashboard.jsx
 │   ├── Products.jsx
 │   ├── Customers.jsx
 │   ├── Ventas.jsx
 │   └── Factura.jsx
 │ 
-├── 📁 routes/
+├── 📁 routes/ --maneja las rutas--
 │   └── AppRoutes.jsx
 │ 
-├── 📁 styles/
+├── 📁 styles/ --maneja los estilos --
 │   ├── ModalProducto.css
 │   ├── ModalFinalizarCompra.css
 │   ├── DarkModeToggle.css
@@ -72,7 +72,7 @@ El proyecto incluye funcionalidades como visualización de productos, gestión d
 ## Instalación
 
 ```bash
-git clone https://github.com/usuario/medieval-dashboard.git
+git clone [ttps://github.com/David-Giron5353/medieval-dashboard.git]
 cd medieval-dashboard
 npm install
 npm run dev
